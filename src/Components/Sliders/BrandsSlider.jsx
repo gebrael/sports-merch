@@ -4,7 +4,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation } from "swiper";
 import "swiper/css/navigation";
-import Image from "next/image";
 
 function BrandsSlider({ slides, backGround }) {
   return (
@@ -43,7 +42,7 @@ function BrandsSlider({ slides, backGround }) {
         modules={[Navigation]}
         className="mySwiper w-full h-[20vh]  lg:h-[25vh]"
       >
-        {slides.map((slide, key) => (
+        {slides.results.map((slide, key) => (
           <SwiperSlide key={key}>
             <div
               key={key}

@@ -44,13 +44,10 @@ function ProductSlider({ slides, title }) {
         modules={[Pagination, Navigation]}
         className="mySwiper w-full "
       >
-        {slides.map((slide, key) => (
+        {slides.results.map((slide, key) => (
           <SwiperSlide className="p-5" key={key}>
             <div className="flex flex-col items-center justify-center">
-              <img
-                src="https://gazef.s3.amazonaws.com/FebApiTask/media/api/images/items/Screenshot_2022-11-21_at_8.34.48_PM.png"
-                alt=""
-              />
+              <img src={slide.image} alt="" />
               <h4 className="text-lg font-semibold">{slide.name}</h4>
               <h1 className="uppercase text-[#BA0829] text-2xl font-bold">
                 egp {slide.price_after_sale}{" "}

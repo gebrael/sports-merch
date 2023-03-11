@@ -44,13 +44,87 @@ function SearchBar() {
           <a href="">
             <i className="fa-solid fa-user text-2xl text-[#6E6E6E]"></i>
           </a>
-          <div className="relative">
-            <a href="">
+          <div className="relative group">
+            <a href="#">
               <i className="fa-solid fa-cart-shopping text-2xl text-[#6E6E6E]"></i>
               <div className="w-5 h-5 flex items-center justify-center text-xs text-white bg-[#2D2F87] rounded-full border-2 border-white absolute top-[-10px] right-[-6px]">
                 <p className="m-0 p-0">2</p>
               </div>
             </a>
+            {/* CART ITEMS */}
+            <div className="cart-menu w-[380px] md:w-[500px] py-5 group-hover:block hidden absolute rounded-xl top-[50px] right-[-15px] bg-white z-10 p-2 shadow-lg">
+              <p className="text-black">Shopping cart (2)</p>
+              {/* product  */}
+              <div className="flex p-2 relative">
+                <img
+                  src="https://gazef.s3.amazonaws.com/FebApiTask/media/api/images/items/Screenshot_2022-11-21_at_8.34.48_PM.png?fbclid=IwAR0rtSehea3LB7SqSc9J96SYLKEM7ujduPkPCJlaT40drMHcBpkm34v6vcc"
+                  alt="product-img"
+                />
+                <div className="product-data px-2">
+                  <p className="text-black">Nike jordan kids</p>
+                  <p className="text-black">
+                    <span className="text-gray-400 text-lg">Price : </span>{" "}
+                    <span className="text-[#2d2f87] text-lg">1500 EGP</span>
+                  </p>
+                  <p className="text-black">
+                    <span className="text-gray-400 text-lg">Size : </span>{" "}
+                    <span className=" text-lg">XL</span>
+                  </p>
+                  <p className="text-black">
+                    <span className="text-gray-400 text-lg">Color : </span>{" "}
+                    <span className=" text-lg">White</span>
+                  </p>
+                  <div className="flex justify-between rounded-lg text-black border-solid border-2 border-gray-100 w-[120px] px-3 m-auto mt-2">
+                    <span className="text-gray-300">-</span>
+                    <span>1</span>
+                    <span className="text-gray-300">+</span>
+                  </div>
+                </div>
+                <i className="fa-solid fa-trash absolute top-2 right-2 text-gray-300 hover:text-black"></i>
+              </div>
+              <hr />
+              {/* product  */}
+              <div className="flex p-2 relative">
+                <img
+                  src="https://gazef.s3.amazonaws.com/FebApiTask/media/api/images/items/Screenshot_2022-11-21_at_8.35.00_PM.png?fbclid=IwAR1pgxF-WQqLq9YsX88ljCPVQlKG8HwBWU-s9L_CxcLqYapOxwC1HHOFS_A"
+                  alt="product-img"
+                />
+                <div className="product-data px-2">
+                  <p className="text-black">Nike jordan kids</p>
+                  <p className="text-black">
+                    <span className="text-gray-400 text-lg">Price : </span>{" "}
+                    <span className="text-[#2d2f87] text-lg">1500 EGP</span>
+                  </p>
+                  <p className="text-black">
+                    <span className="text-gray-400 text-lg">Size : </span>{" "}
+                    <span className=" text-lg">XL</span>
+                  </p>
+                  <p className="text-black">
+                    <span className="text-gray-400 text-lg">Color : </span>{" "}
+                    <span className=" text-lg">White</span>
+                  </p>
+                  <div className="flex justify-between rounded-lg text-black border-solid border-2 border-gray-100 w-[120px] px-3 m-auto mt-2">
+                    <span className="text-gray-300">-</span>
+                    <span>1</span>
+                    <span className="text-gray-300">+</span>
+                  </div>
+                </div>
+                <i className="fa-solid fa-trash absolute top-2 right-2 text-gray-300 hover:text-black"></i>
+              </div>
+              {/* bottom buttons */}
+              <div className="absolute w-full h-1/3 bottom-5 left-0 bg-white rounded-b-lg flex flex-col">
+                <div className="flex justify-between p-2">
+                  <p>Total Cart Amount</p>
+                  <p>EGP 5500</p>
+                </div>
+                <button className="bg-[#2D2F87] rounded-full text-white w-2/3 m-auto text-xl p-1">
+                  Complete The Purchase
+                </button>
+                <button className="text-black rounded-full w-2/3 m-auto text-xl border-solid border-2 border-black p-1">
+                  View Cart
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

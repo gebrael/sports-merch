@@ -26,12 +26,12 @@ function MainSlider({ slides, hasBanner, banner }) {
       modules={[Pagination, Autoplay, Navigation]}
       className="mySwiper w-full h-[100%]"
     >
-      {slides.map((slide, key) => (
+      {slides.results.map((slide, key) => (
         <SwiperSlide
           key={key}
           className="bg-none md:bg-cover bg-center relative"
           style={{
-            backgroundImage: `url(${slide})`,
+            backgroundImage: `url(${slide.image})`,
             width: "100%",
             height: "100%",
           }}
