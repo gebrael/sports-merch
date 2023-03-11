@@ -17,10 +17,10 @@ function MainSlider({ slides, hasBanner, banner }) {
         clickable: true,
       }}
       loop={true}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // }}
       slidesPerView={1}
       navigation={true}
       modules={[Pagination, Autoplay, Navigation]}
@@ -45,17 +45,17 @@ function MainSlider({ slides, hasBanner, banner }) {
 
                 <div className="w-[100%] h-[100%] md:w-[50%] md:h-[100%] py-10 flex flex-col items-center justify-start bg-[#FFF2B9]">
                   <h1 className=" text-black text-2xl md:text-4xl font-extrabold uppercase ">
-                    let's get active!
+                    {"let's get active!"}
                   </h1>
                   <h1 className=" text-black text-5xl md:text-7xl font-extrabold uppercase ">
-                    flat 20% off
+                    {"flat 20% off"}
                   </h1>
                   <h1 className=" text-black mt-3 text-2xl md:text-3xl font-semibold capitalize ">
                     equipment collection
                   </h1>
                   <span className="flex gap-2 mt-5 items-center">
                     <h1 className=" text-black text-2xl font-extrabold uppercase ">
-                      use code:
+                      {"use code:"}
                     </h1>
                     <h1 className=" text-black text-2xl font-extrabold uppercase underline">
                       active
@@ -69,7 +69,7 @@ function MainSlider({ slides, hasBanner, banner }) {
             ) : (
               <div className="w-full h-full flex">
                 <div className=" w-full bg-cover bg-center relative">
-                  <img src={slide} alt="" className="w-full h-full" />
+                  <img src={slide.image} alt="" className="w-full h-full" />
                 </div>
 
                 <div className="absolute top-[5%] bottom-[5%] left-[5%] w-[35%] rounded-2xl shadow-lg shadow-black py-10 flex flex-col items-center justify-start bg-black">
@@ -77,7 +77,7 @@ function MainSlider({ slides, hasBanner, banner }) {
                     sale just got bigger
                   </h1>
                   <h1 className=" text-white text-5xl md:text-7xl font-extrabold uppercase ">
-                    40-90% off
+                    {"40-90% off"}
                   </h1>
                   <h1 className=" text-black mt-3 text-2xl md:text-3xl font-semibold uppercase ">
                     everything
@@ -86,7 +86,7 @@ function MainSlider({ slides, hasBanner, banner }) {
                     shop now
                   </button>
                   <p className="text-white text-xs cursor-pointer mt-10">
-                    T&C's Apply
+                    {"T&C's Apply"}
                   </p>
                 </div>
               </div>

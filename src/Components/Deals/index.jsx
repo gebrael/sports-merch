@@ -12,7 +12,7 @@ function Deals() {
           <button className="text-2xl text-slate-500 font-bold bg-white">
             shop now
           </button>
-          <p className="text-xs text-slate-400">t&c's apply</p>
+          <p className="text-xs text-slate-400">{"t&c's apply"}</p>
         </div>
       </div>
 
@@ -25,7 +25,7 @@ function Deals() {
           <button className="text-2xl text-slate-500 font-bold bg-white">
             shop now
           </button>
-          <p className="text-xs text-slate-400">t&c's apply</p>
+          <p className="text-xs text-slate-400">{"t&c's apply"}</p>
         </div>
       </div>
     </div>

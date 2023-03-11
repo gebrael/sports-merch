@@ -22,7 +22,7 @@ function Footer() {
         </div>
       </div>
       <div className="w-full py-3 text-center">
-        <p>Copyright © 2022 All Rights Reserved</p>
+        <p>Copyright &#169; 2022 All Rights Reserved</p>
       </div>
     </div>
   );
