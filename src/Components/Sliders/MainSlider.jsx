@@ -17,10 +17,10 @@ function MainSlider({ slides, hasBanner, banner }) {
         clickable: true,
       }}
       loop={true}
-      // autoplay={{
-      //   delay: 2500,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       slidesPerView={1}
       navigation={true}
       modules={[Pagination, Autoplay, Navigation]}
